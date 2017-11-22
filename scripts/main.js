@@ -1,3 +1,4 @@
+var storedName = localStorage.getItem('name');
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
@@ -10,8 +11,7 @@ function setUserName() {
 if(!storedName) {
   setUserName();
 } else {
-  var storedName = localStorage.getItem('name');
-  myHeading.textContent = 'New York is great!, ' + storedName;
+   myHeading.textContent = 'New York is great!, ' + storedName;
 }
 
 myButton.onclick = function() {
