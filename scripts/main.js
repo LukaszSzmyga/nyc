@@ -1,6 +1,7 @@
 var storedName = localStorage.getItem('name');
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
+var myImage = document.querySelector('img');
 
 function setUserName() {
   var myName = prompt('Please enter your name.');
@@ -18,7 +19,6 @@ myButton.onclick = function() {
   setUserName();
 }
 
-var myImage = document.querySelector('img');
 
 myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
